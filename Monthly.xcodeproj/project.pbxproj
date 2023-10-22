@@ -20,6 +20,8 @@
 		40274FCF2ADC86C2002D5DEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40274FCE2ADC86C2002D5DEA /* Assets.xcassets */; };
 		40274FD32ADC86C3002D5DEA /* MonthlyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 40274FBF2ADC86BE002D5DEA /* MonthlyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4055998D2ADD355100A87F42 /* MonthConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4055998C2ADD355100A87F42 /* MonthConfig.swift */; };
+		40C1155A2AE538B80013D4DB /* MonthlyWidgetIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 40C115592AE538B80013D4DB /* MonthlyWidgetIntents.intentdefinition */; };
+		40C1155B2AE538B80013D4DB /* MonthlyWidgetIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 40C115592AE538B80013D4DB /* MonthlyWidgetIntents.intentdefinition */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		40274FCE2ADC86C2002D5DEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40274FD02ADC86C2002D5DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4055998C2ADD355100A87F42 /* MonthConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthConfig.swift; sourceTree = "<group>"; };
+		40C115592AE538B80013D4DB /* MonthlyWidgetIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MonthlyWidgetIntents.intentdefinition; sourceTree = "<group>"; };
+		40C1155C2AE538D40013D4DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 		40274FAC2ADC8565002D5DEA /* Monthly */ = {
 			isa = PBXGroup;
 			children = (
+				40C1155C2AE538D40013D4DB /* Info.plist */,
 				40274FAD2ADC8565002D5DEA /* MonthlyApp.swift */,
 				40274FAF2ADC8565002D5DEA /* ContentView.swift */,
 				40274FB12ADC8567002D5DEA /* Assets.xcassets */,
@@ -141,6 +146,7 @@
 				40274FCE2ADC86C2002D5DEA /* Assets.xcassets */,
 				40274FD02ADC86C2002D5DEA /* Info.plist */,
 				4055998C2ADD355100A87F42 /* MonthConfig.swift */,
+				40C115592AE538B80013D4DB /* MonthlyWidgetIntents.intentdefinition */,
 			);
 			path = MonthlyWidget;
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40274FB02ADC8565002D5DEA /* ContentView.swift in Sources */,
+				40C1155A2AE538B80013D4DB /* MonthlyWidgetIntents.intentdefinition in Sources */,
 				40274FAE2ADC8565002D5DEA /* MonthlyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +266,7 @@
 				40274FCB2ADC86BF002D5DEA /* MonthlyWidget.swift in Sources */,
 				40274FCD2ADC86BF002D5DEA /* AppIntent.swift in Sources */,
 				40274FC92ADC86BF002D5DEA /* MonthlyWidgetLiveActivity.swift in Sources */,
+				40C1155B2AE538B80013D4DB /* MonthlyWidgetIntents.intentdefinition in Sources */,
 				40274FC72ADC86BF002D5DEA /* MonthlyWidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,11 +413,13 @@
 				DEVELOPMENT_TEAM = M7D3GWZL49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Monthly/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -435,11 +445,13 @@
 				DEVELOPMENT_TEAM = M7D3GWZL49;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Monthly/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +477,7 @@
 				INFOPLIST_FILE = MonthlyWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MonthlyWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,6 +505,7 @@
 				INFOPLIST_FILE = MonthlyWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MonthlyWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
