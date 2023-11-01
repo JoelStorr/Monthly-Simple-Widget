@@ -9,9 +9,8 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-
 struct MonthlyWidgetAttributes: ActivityAttributes {
-    
+
     public struct ContentState: Codable, Hashable {
         // Dynamic stateful properties about your activity go here!
         var emoji: String
@@ -19,7 +18,6 @@ struct MonthlyWidgetAttributes: ActivityAttributes {
     // Fixed non-changing properties about your activity go here!
     var name: String
 }
-
 
 struct MonthlyWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
@@ -64,17 +62,15 @@ extension MonthlyWidgetAttributes {
     }
 }
 
-
 extension MonthlyWidgetAttributes.ContentState {
     fileprivate static var smiley: MonthlyWidgetAttributes.ContentState {
         MonthlyWidgetAttributes.ContentState(emoji: "😀")
      }
-     
+
      fileprivate static var starEyes: MonthlyWidgetAttributes.ContentState {
          MonthlyWidgetAttributes.ContentState(emoji: "🤩")
      }
 }
-
 
 #Preview("Notification", as: .content, using: MonthlyWidgetAttributes.preview) {
    MonthlyWidgetLiveActivity()

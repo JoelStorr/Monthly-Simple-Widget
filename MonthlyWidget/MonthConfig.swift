@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 extension Color {
     static let paleYellow   = Color(red: 252/255, green: 225/255, blue: 121/255)
     static let palePink     = Color(red: 254/255, green: 138/255, blue: 138/255)
@@ -21,9 +20,8 @@ extension Color {
     static let paleBrown    = Color(red: 124/255, green: 102/255, blue: 85/255)
 }
 
-
 struct MonthConfig {
-    
+
     let backgroundColor: Color
     let emojiText: String
     let weekdayTextColor: Color
